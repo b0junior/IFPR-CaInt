@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="br" xml:lang="br">
 <head>
-<!-- 2021-02-02 Tue 16:28 -->
+<!-- 2021-02-24 qua 00:59 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>IFPR - Campus Inteligente</title>
 <meta name="generator" content="Org mode" />
-<meta name="author" content="0xb055" />
+<meta name="author" content="Carlos A. Ferreira" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -229,24 +229,130 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org4a13b9f">1. Intro:</a></li>
+<li><a href="#org0bae89d">1. Intro</a>
+<ul>
+<li><a href="#orgb2e26ab">1.1. Detahles PlatformIO CLI</a></li>
+<li><a href="#org70f28a4">1.2. Detalhes de Configuração Gateway e NetServer LoraWAN</a></li>
+</ul>
+</li>
+<li><a href="#orgaa91732">2. Passos Seguintes:</a>
+<ul>
+<li><a href="#org8a3efc7">2.1. <code>[0/2]</code> TODO Fases:</a></li>
+</ul>
+</li>
+<li><a href="#org13cdea7">3. Apoio:</a>
+<ul>
+<li><a href="#org009629a">3.1. Links</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org4a13b9f" class="outline-2">
-<h2 id="org4a13b9f"><span class="section-number-2">1</span> Intro:</h2>
+<div id="outline-container-org0bae89d" class="outline-2">
+<h2 id="org0bae89d"><span class="section-number-2">1</span> Intro</h2>
 <div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orgb2e26ab" class="outline-3">
+<h3 id="orgb2e26ab"><span class="section-number-3">1.1</span> Detahles PlatformIO CLI</h3>
+<div class="outline-text-3" id="text-1-1">
 <p>
-Teste, Teste, Teste
+<b>Comandos</b>
+<code>pio</code> = alias do comando <code>platformio</code>
 </p>
+<ul class="org-ul">
+<li><code>pio platform install &lt;platform&gt;</code> ::- Instala plataforma para projetos</li>
+<li><code>pio project init</code> ::- Inicia um novo projeto dentro da pasta atual</li>
+<li><code>pio devices list</code> ::- Lista dispositivos conectados, detectados pelo PlatformIO</li>
+<li><code>pio lib -g install &lt;library&gt;</code> ::- Instala a biblioteca em modo global do <i>pio</i></li>
+<li><code>pio lib search &lt;library&gt;</code> ::- Procura pela lib.(Nome da lib entre aspas)</li>
+<li><code>pio home</code> ::- Inicia a home (Como nos IDE)</li>
+
+<li>Comandos dentro do diretorio de projetos
+<ul class="org-ul">
+<li><code>pio run</code> ::- Compila o código fora do device.</li>
+<li><code>pio run --list-targets</code> ::- Mostra os possíveis modos de compilação(compilar, limpar arquivos,
+upload para device&#x2026;).</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org70f28a4" class="outline-3">
+<h3 id="org70f28a4"><span class="section-number-3">1.2</span> Detalhes de Configuração Gateway e NetServer LoraWAN</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li><i>Possíveis configs</i>
+Material atualizado, encontrado em busca
+<ul class="org-ul">
+<li><a href="https://github.com/gotthardp/lorawan-server/blob/master/doc/Configuration.md">https://github.com/gotthardp/lorawan-server/blob/master/doc/Configuration.md</a></li>
+</ul></li>
+
+<li><code>[0/2]</code> Configuração do Nerserver e do LoraWAN &#x2013; Local sem TTN.
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Teste: Lora Gateway Bridge
+<ul class="org-ul">
+<li><a href="https://github.com/brocaar/lora-gateway-bridge">https://github.com/brocaar/lora-gateway-bridge</a></li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> Teste: Lora Server
+<ul class="org-ul">
+<li><a href="https://github.com/brocaar/loraserver">https://github.com/brocaar/loraserver</a></li>
+</ul></li>
+</ul></li>
+
+<li class="off"><code>[&#xa0;]</code> Buscar método de edição/inserção de arquivos de cofiguração no Gateway Femto WRLGFM100</li>
+
+<li><b>A ver:</b>
+<ul class="org-ul">
+<li><a href="https://www.openstack.org/projects/">https://www.openstack.org/projects/</a> ::- Site citado no material de apoio. Buscar projetos</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgaa91732" class="outline-2">
+<h2 id="orgaa91732"><span class="section-number-2">2</span> Passos Seguintes:</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org8a3efc7" class="outline-3">
+<h3 id="org8a3efc7"><span class="section-number-3">2.1</span> <code>[0/2]</code> TODO Fases:</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Bibliotecas do Platformio
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> heltec-lora-esp32-v2</li>
+</ul></li>
+
+<li class="off"><code>[&#xa0;]</code> Codificação Heltec LoRa 32 v2
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Protocolo Upstream</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org13cdea7" class="outline-2">
+<h2 id="org13cdea7"><span class="section-number-2">3</span> Apoio:</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org009629a" class="outline-3">
+<h3 id="org009629a"><span class="section-number-3">3.1</span> Links</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li><a href="https://github.com/platformio/platformio-examples">https://github.com/platformio/platformio-examples</a></li>
+<li><a href="https://docs.platformio.org/en/latest/core/quickstart.html">https://docs.platformio.org/en/latest/core/quickstart.html</a></li>
+</ul>
+</div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="author">Author: 0xb055</p>
-<p class="date">Created: 2021-02-02 Tue 16:28</p>
-<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="author">Author: Carlos A. Ferreira</p>
+<p class="date">Created: 2021-02-24 qua 00:59</p>
 </div>
 </body>
 </html>
